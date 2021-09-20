@@ -1,7 +1,4 @@
-import express from "express";
+import { server } from "./http";
+import "./websocket/ChatService";
 
-const app = express();
-
-app.use(express.json());
-
-app.listen(3333, () => console.log("Server is running on port 3333"));
+server.listen(3333, () => console.log("Server is running on port 3333"));
