@@ -15,8 +15,6 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 
 const io = new Server(server);
 
-io.on("connection", (socket) => {
-  console.log("Socket", socket.id);
-});
+io.on("connection", (socket) => {});
 
 export { server, io };
