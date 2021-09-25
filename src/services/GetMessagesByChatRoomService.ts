@@ -9,6 +9,8 @@ class GetMessagesByChatRoomService {
     })
       .populate("to")
       .exec();
+
+    return messages;
   }
 }
 
